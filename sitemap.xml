@@ -42,6 +42,36 @@
   </url><url>
     <loc>https://fabiolb.net/feature/authorization/</loc>
   </url><url>
+    <loc>https://fabiolb.net/feature/bgp/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/bgp.anycastaddresses/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/bgp.asn/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/bgp.certfile/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/bgp.enabled/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/bgp.enablegrpc/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/bgp.gobgpdcfgfile/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/bgp.grpclistenaddress/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/bgp.grpctls/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/bgp.keyfile/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/bgp.listenaddresses/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/bgp.listenport/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/bgp.nexthop/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/bgp.peers/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/bgp.routerid/</loc>
+  </url><url>
     <loc>https://fabiolb.net/faq/binding-to-low-ports/</loc>
   </url><url>
     <loc>https://fabiolb.net/feature/certificate-stores/</loc>
@@ -130,11 +160,19 @@
   </url><url>
     <loc>https://fabiolb.net/ref/proxy.cs/</loc>
   </url><url>
+    <loc>https://fabiolb.net/ref/proxy.deregistergraceperiod/</loc>
+  </url><url>
     <loc>https://fabiolb.net/ref/proxy.dialtimeout/</loc>
   </url><url>
     <loc>https://fabiolb.net/ref/proxy.flushinterval/</loc>
   </url><url>
     <loc>https://fabiolb.net/ref/proxy.globalflushinterval/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/proxy.grpcmaxrxmsgsize/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/proxy.grpcmaxtxmsgsize/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/proxy.grpcshutdowntimeout/</loc>
   </url><url>
     <loc>https://fabiolb.net/ref/proxy.gzip.contenttype/</loc>
   </url><url>
@@ -251,6 +289,16 @@
     <loc>https://fabiolb.net/ref/ui.addr/</loc>
   </url><url>
     <loc>https://fabiolb.net/ref/ui.color/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/ui.routingtable.source.host/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/ui.routingtable.source.linkenabled/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/ui.routingtable.source.newtab/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/ui.routingtable.source.port/</loc>
+  </url><url>
+    <loc>https://fabiolb.net/ref/ui.routingtable.source.scheme/</loc>
   </url><url>
     <loc>https://fabiolb.net/ref/ui.title/</loc>
   </url><url>

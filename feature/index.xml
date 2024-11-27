@@ -39,6 +39,16 @@ or a custom format to stdout.&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>BGP</title>
+      <link>https://fabiolb.net/feature/bgp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/feature/bgp/</guid>
+      <description>NOTE: This feature does not work on Windows at present since the gobgp project does not support windows.
+This feature integrates the functionality of gobgpd with fabio. This is particularly useful in the scenario where we are using anycast IP addresses and want to dynamically advertise to upstream routers when we&amp;rsquo;re ready to receive traffic. In the past, we&amp;rsquo;ve used external router packages such as quagga or frr to handle this for us, but it&amp;rsquo;s potentially messy to make sure that the route advertisement stops if fabio goes down, and the bgp daemon is started back up once fabio is running again.</description>
+    </item>
+    
+    <item>
       <title>Certificate Stores</title>
       <link>https://fabiolb.net/feature/certificate-stores/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -212,7 +222,7 @@ To use TCP Dynamic proxy support the service needs to advertise urlprefix-127.0.
       <guid>https://fabiolb.net/feature/tcp-proxy/</guid>
       <description>fabio can run a transparent TCP proxy which dynamically forwards an incoming connection on a given port to services which advertise that port. To use TCP proxy support the service needs to advertise urlprefix-:1234 proto=tcp in Consul. In addition, fabio needs to be configured to listen on that port:
 fabio -proxy.addr &amp;#39;:1234;proto=tcp&amp;#39; TCP proxy support can be combined with Certificate Stores to provide TLS termination on fabio.
-fabio -proxy.cs &amp;#39;cs=ssl;type=path;path=/etc/ssl&amp;#39; -proxy.</description>
+fabio -proxy.cs &amp;#39;cs=ssl;type=path;cert=/etc/ssl&amp;#39; -proxy.</description>
     </item>
     
     <item>

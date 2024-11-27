@@ -30,6 +30,164 @@ proxy.keepalivetimeout = 0s </description>
     </item>
     
     <item>
+      <title>bgp.anycastaddresses</title>
+      <link>https://fabiolb.net/ref/bgp.anycastaddresses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/bgp.anycastaddresses/</guid>
+      <description>bgp.anycastaddresses sets the anycast addresses we will advertise, separated by comma. Technically this will advertise any route prefix.
+These should already be configured on the host probably hung off loopback. For example, 192.168.5.3/32.
+The default value is
+bgp.anycastaddresses = If bgp is enabled, this must be defined.</description>
+    </item>
+    
+    <item>
+      <title>bgp.asn</title>
+      <link>https://fabiolb.net/ref/bgp.asn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/bgp.asn/</guid>
+      <description>bgp.asn sets the asn ID of our router
+The default value is
+bgp.asn = 65000 </description>
+    </item>
+    
+    <item>
+      <title>bgp.certfile</title>
+      <link>https://fabiolb.net/ref/bgp.certfile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/bgp.certfile/</guid>
+      <description>bgp.certfile is the file path of the certificate, and is required if bgp.grpctls is set to true.
+The default value is
+bgp.certfile = </description>
+    </item>
+    
+    <item>
+      <title>bgp.enabled</title>
+      <link>https://fabiolb.net/ref/bgp.enabled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/bgp.enabled/</guid>
+      <description>bgp.enabled enables the embedded gobgpd daemon
+The default value is
+bgp.enabled = false </description>
+    </item>
+    
+    <item>
+      <title>bgp.enablegrpc</title>
+      <link>https://fabiolb.net/ref/bgp.enablegrpc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/bgp.enablegrpc/</guid>
+      <description>bgp.enablegrpc enables the gobgp grpc interface.
+To be used with the gobgp command line client.
+The default value is
+bgp.enablegrpc = false </description>
+    </item>
+    
+    <item>
+      <title>bgp.gobgpdcfgfile</title>
+      <link>https://fabiolb.net/ref/bgp.gobgpdcfgfile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/bgp.gobgpdcfgfile/</guid>
+      <description>bgp.gobgpdcfgfile is the optional file path to a gobgpd config file. This overrides the global config items, such as bgp.routerid, bgp.asn etc. This also skips automatically adding gobgpd policies that restrict / disallow accepting prefixes from neighbors. Only use this if you know what you&amp;rsquo;re doing, this is to allow for more flexibility than we expose directly with fabio.
+The default value is
+bgp.gobgpdcfgfile = </description>
+    </item>
+    
+    <item>
+      <title>bgp.grpclistenaddress</title>
+      <link>https://fabiolb.net/ref/bgp.grpclistenaddress/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/bgp.grpclistenaddress/</guid>
+      <description>bgp.grpclistenaddress is the listen interface and port if bgp.enablegrpc is set to true.
+The default value is
+bgp.grpclistenaddress = 127.0.0.1:50051 </description>
+    </item>
+    
+    <item>
+      <title>bgp.grpctls</title>
+      <link>https://fabiolb.net/ref/bgp.grpctls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/bgp.grpctls/</guid>
+      <description>bgp.grpctls is whether to enable TLS on the bgp grpc interface.
+The default value is
+bgp.grpctls = false </description>
+    </item>
+    
+    <item>
+      <title>bgp.keyfile</title>
+      <link>https://fabiolb.net/ref/bgp.keyfile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/bgp.keyfile/</guid>
+      <description>bgp.keyfile is the file path of the key file, and is required if bgp.grpctls is set to true.
+The default value is
+bgp.keyfile = </description>
+    </item>
+    
+    <item>
+      <title>bgp.listenaddresses</title>
+      <link>https://fabiolb.net/ref/bgp.listenaddresses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/bgp.listenaddresses/</guid>
+      <description>bgp.listenaddresses sets the listen addresses for bgp, separated by comma.
+The default value is
+bgp.listenaddresses = 0.0.0.0 which listens on all interfaces.</description>
+    </item>
+    
+    <item>
+      <title>bgp.listenport</title>
+      <link>https://fabiolb.net/ref/bgp.listenport/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/bgp.listenport/</guid>
+      <description>bgp.listenport sets the listen ports for bgp communication from other routers.
+The default value is
+bgp.listenport = 179 The default bgp port is 179.</description>
+    </item>
+    
+    <item>
+      <title>bgp.nexthop</title>
+      <link>https://fabiolb.net/ref/bgp.nexthop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/bgp.nexthop/</guid>
+      <description>bgp.nexthop sets the next hop address.
+If not set, it uses the bgp.routerid instead.
+The default value is
+bgp.nexthop = </description>
+    </item>
+    
+    <item>
+      <title>bgp.peers</title>
+      <link>https://fabiolb.net/ref/bgp.peers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/bgp.peers/</guid>
+      <description>bgp.peers sets the bgp peers we will advertise routes to. This is required if bgp is enabled. bgp.peers is specified as a comma separated list of neighboraddress and asn pairs, i.e.
+bgp.peers = address=1.2.3.4;asn=65001,address=5.6.7.8;asn=65002 valid parameters for peers are:
+address - required port - optional, defaults to 179 asn - required multihop - optional, defaults to false multihoplength - optional, defaults to 2 password - optional The default value is</description>
+    </item>
+    
+    <item>
+      <title>bgp.routerid</title>
+      <link>https://fabiolb.net/ref/bgp.routerid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/bgp.routerid/</guid>
+      <description>bgp.routerid is the router id (ip address) of this router.
+This is required if bgp is enabled. This should be the unique IP address, not any anycast. This will also be used as the default nexthop address unless bgp.nexthop is specified.
+The default value is
+bgp.routerid = </description>
+    </item>
+    
+    <item>
       <title>glob.cache.size</title>
       <link>https://fabiolb.net/ref/glob.cache.size/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -344,6 +502,18 @@ File The file certificate source supports one certificate which is loaded at sta
     </item>
     
     <item>
+      <title>proxy.deregistergraceperiod</title>
+      <link>https://fabiolb.net/ref/proxy.deregistergraceperiod/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/proxy.deregistergraceperiod/</guid>
+      <description>proxy.deregistergraceperiod configures the time to wait before shutting down the proxies de-registering from the service registry.
+After a signal is caught Fabio will immediately de-register from the service registry and wait for proxy.deregistergraceperiod letting in-flight requests finish after which it will continue with shutting down the proxy.
+The default is
+proxy.deregistergraceperiod = 0s </description>
+    </item>
+    
+    <item>
       <title>proxy.dialtimeout</title>
       <link>https://fabiolb.net/ref/proxy.dialtimeout/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -374,6 +544,36 @@ proxy.flushinterval = 1s </description>
       <description>proxy.globalflushinterval configures periodic flushing of the response buffer for proxied non-SSE connections. By default it is disabled.
 The default is
 proxy.globalflushinterval = 0 </description>
+    </item>
+    
+    <item>
+      <title>proxy.grpcmaxrxmsgsize</title>
+      <link>https://fabiolb.net/ref/proxy.grpcmaxrxmsgsize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/proxy.grpcmaxrxmsgsize/</guid>
+      <description>proxy.grpcmaxrxmsgsize configures the grpc max receive message size in bytes. The default value is
+proxy.grpcmaxrxmsgsize = 4194304 which is 4MB</description>
+    </item>
+    
+    <item>
+      <title>proxy.grpcmaxtxmsgsize</title>
+      <link>https://fabiolb.net/ref/proxy.grpcmaxtxmsgsize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/proxy.grpcmaxtxmsgsize/</guid>
+      <description>proxy.grpcmaxtxmsgsize configures the grpc max transmit message size in bytes. The default value is
+proxy.grpcmaxtxmsgsize = 4194304 which is 4MB</description>
+    </item>
+    
+    <item>
+      <title>proxy.grpcshutdowntimeout</title>
+      <link>https://fabiolb.net/ref/proxy.grpcshutdowntimeout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/proxy.grpcshutdowntimeout/</guid>
+      <description>proxy.grpcshutdowntimeout configures the amount of time fabio will wait to attempt to close the connection while waiting for grpc traffic to finish to a backend that&amp;rsquo;s been deregistered. The default value is
+proxy.grpcshutdowntimeout = 2s </description>
     </item>
     
     <item>
@@ -967,6 +1167,63 @@ ui.addr = :9998 </description>
       <description>ui.color configures the background color of the UI. Color names are from http://materializecss.com/color.html
 The default is
 ui.color = light-green </description>
+    </item>
+    
+    <item>
+      <title>ui.routingtable.source.host</title>
+      <link>https://fabiolb.net/ref/ui.routingtable.source.host/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/ui.routingtable.source.host/</guid>
+      <description>ui.routingtable.source.host configures an optional host or base address for the link in the source column.
+This is only used when the source is not a separate server (does not begin with &amp;lsquo;/&amp;rsquo;, e.g. &amp;lsquo;dev.google.net&amp;rsquo;). If source is subdirectory it will set the link for the source to this host. If this is not set, and the source link is enabled, the link will default to current host.
+This is only applicable if the linkenabled is set to true.</description>
+    </item>
+    
+    <item>
+      <title>ui.routingtable.source.linkenabled</title>
+      <link>https://fabiolb.net/ref/ui.routingtable.source.linkenabled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/ui.routingtable.source.linkenabled/</guid>
+      <description>ui.routingtable.source.linkenabled optionally configures if the routing table&amp;rsquo;s column &amp;ldquo;source&amp;rdquo; should be a clickable link.
+The default is
+ui.routingtable.source.linkenabled = false </description>
+    </item>
+    
+    <item>
+      <title>ui.routingtable.source.newtab</title>
+      <link>https://fabiolb.net/ref/ui.routingtable.source.newtab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/ui.routingtable.source.newtab/</guid>
+      <description>ui.routingtable.source.scheme configures the scheme protocol for the link of the source on the routing table. This is useful when the scheme is different than the current page or to force the traffic to a certain protocol.
+This is only applicable if the linkenabled is set to true.
+The default is
+ui.routingtable.source.scheme = http </description>
+    </item>
+    
+    <item>
+      <title>ui.routingtable.source.port</title>
+      <link>https://fabiolb.net/ref/ui.routingtable.source.port/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/ui.routingtable.source.port/</guid>
+      <description>ui.routingtable.source.port configures an optional port for the routing table source column link. This is used in conjunction with the scheme and host.
+If the source is not a separate server (does not begin with &amp;lsquo;/&amp;rsquo;, e.g. &amp;lsquo;dev.google.net&amp;rsquo;), and the host is set, this will use the port that is set, or default to the current scheme protocol port (80 for http or 443 for https).
+This is only applicable if the linkenabled is set to true.</description>
+    </item>
+    
+    <item>
+      <title>ui.routingtable.source.scheme</title>
+      <link>https://fabiolb.net/ref/ui.routingtable.source.scheme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabiolb.net/ref/ui.routingtable.source.scheme/</guid>
+      <description>ui.routingtable.source.scheme configures the scheme protocol for the link of the source on the routing table. This is useful when the scheme is different than the current page or to force the traffic to a certain protocol.
+This is only applicable if the linkenabled is set to true.
+The default is
+ui.routingtable.source.scheme = http </description>
     </item>
     
     <item>
