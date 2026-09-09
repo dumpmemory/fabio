@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <title>registry.consul.tagprefix</title>
+    <title>proxy.header.clearclient</title>
 
     
     <link href="/css/theDocs.all.min.css" rel="stylesheet">
@@ -210,7 +210,7 @@
       
         <li><a href="https://fabiolb.net/ref/proxy.gzip.contenttype/">proxy.gzip.contenttype</a></li>
       
-        <li><a href="https://fabiolb.net/ref/proxy.header.clearclient/">proxy.header.clearclient</a></li>
+        <li><a class="active" href="https://fabiolb.net/ref/proxy.header.clearclient/">proxy.header.clearclient</a></li>
       
         <li><a href="https://fabiolb.net/ref/proxy.header.clientip/">proxy.header.clientip</a></li>
       
@@ -274,7 +274,7 @@
       
         <li><a href="https://fabiolb.net/ref/registry.consul.servicemonitors/">registry.consul.serviceMonitors</a></li>
       
-        <li><a class="active" href="https://fabiolb.net/ref/registry.consul.tagprefix/">registry.consul.tagprefix</a></li>
+        <li><a href="https://fabiolb.net/ref/registry.consul.tagprefix/">registry.consul.tagprefix</a></li>
       
         <li><a href="https://fabiolb.net/ref/registry.consul.token/">registry.consul.token</a></li>
       
@@ -366,13 +366,11 @@
 
       
       <section>
-        <h2>registry.consul.tagprefix</h2>
-        <p><code>registry.consul.tagprefix</code> configures the prefix for tags which define routes.</p>
-<p>Services which define routes publish one or more tags with host/path
-routes which they serve. These tags must have this prefix to be
-recognized as routes.</p>
+        <h2>proxy.header.clearclient</h2>
+        <p><code>proxy.header.clearclient</code> clear headers from client.</p>
+<p>Configure the proxy to clear source address headers supplied by the client. This will prevent clients from manipulating headers normally supplied by Fabio.</p>
 <p>The default is</p>
-<pre><code>registry.consul.tagprefix = urlprefix-
+<pre><code>proxy.header.clearclient = false
 </code></pre>
 
         
